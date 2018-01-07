@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: doggyMentor
+      password:
+      username:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+
+server:
+  port: 8080
+
+logging:
+   level:
+     ROOT: INFO
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
