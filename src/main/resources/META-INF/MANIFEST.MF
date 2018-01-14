@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Class-Path: spring-data-commons-1.13.1.RELEASE.jar mongodb-driver-core
+ -3.4.2.jar spring-boot-configuration-processor-1.5.2.RELEASE.jar spri
+ ng-beans-4.3.7.RELEASE.jar aopalliance-1.0.jar jackson-annotations-2.
+ 8.0.jar mongodb-driver-3.4.2.jar spring-boot-1.5.2.RELEASE.jar jjwt-0
+ .7.0.jar spring-boot-starter-logging-1.5.2.RELEASE.jar bson-3.4.2.jar
+  spring-web-4.3.7.RELEASE.jar spring-aop-4.3.7.RELEASE.jar spring-sec
+ urity-core-4.2.2.RELEASE.jar spring-boot-starter-data-mongodb-1.5.2.R
+ ELEASE.jar hibernate-validator-5.3.4.Final.jar spring-security-config
+ -4.2.2.RELEASE.jar spring-boot-starter-aop-1.5.2.RELEASE.jar logback-
+ core-1.1.11.jar spring-boot-starter-web-1.5.2.RELEASE.jar spring-secu
+ rity-oauth2-2.0.13.RELEASE.jar spring-data-mongodb-1.10.1.RELEASE.jar
+  jackson-core-2.8.7.jar spring-boot-autoconfigure-1.5.2.RELEASE.jar c
+ ommons-codec-1.10.jar validation-api-1.1.0.Final.jar jboss-logging-3.
+ 3.0.Final.jar tomcat-embed-websocket-8.5.11.jar jackson-core-asl-1.9.
+ 13.jar spring-security-web-4.2.2.RELEASE.jar commons-collections4-4.1
+ .jar log4j-over-slf4j-1.7.24.jar spring-boot-starter-1.5.2.RELEASE.ja
+ r jackson-datatype-jsr310-2.8.7.jar classmate-1.3.3.jar spring-tx-4.3
+ .7.RELEASE.jar tomcat-embed-core-8.5.11.jar jackson-databind-2.8.7.ja
+ r snakeyaml-1.17.jar spring-boot-starter-security-1.5.2.RELEASE.jar s
+ pring-context-4.3.7.RELEASE.jar jul-to-slf4j-1.7.24.jar logback-class
+ ic-1.1.11.jar android-json-0.0.20131108.vaadin1.jar commons-lang3-3.5
+ .jar spring-expression-4.3.7.RELEASE.jar spring-core-4.3.7.RELEASE.ja
+ r guava-21.0.jar jcl-over-slf4j-1.7.24.jar jackson-mapper-asl-1.9.13.
+ jar slf4j-api-1.7.24.jar tomcat-embed-el-8.5.11.jar spring-boot-devto
+ ols-1.5.2.RELEASE.jar spring-webmvc-4.3.7.RELEASE.jar aspectjweaver-1
+ .8.9.jar spring-boot-starter-tomcat-1.5.2.RELEASE.jar
+Main-Class: io.github.doggymentor.Application
+

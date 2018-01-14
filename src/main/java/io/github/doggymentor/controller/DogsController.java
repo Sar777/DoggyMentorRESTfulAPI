@@ -1,9 +1,9 @@
 package io.github.doggymentor.controller;
 
 import io.github.doggymentor.converter.ConverterFacade;
-import io.github.doggymentor.domain.dog.DogCommand;
 import io.github.doggymentor.domain.command.Command;
 import io.github.doggymentor.domain.dog.Dog;
+import io.github.doggymentor.domain.dog.DogCommand;
 import io.github.doggymentor.domain.user.User;
 import io.github.doggymentor.dto.DogCommandDTO;
 import io.github.doggymentor.dto.DogDTO;
