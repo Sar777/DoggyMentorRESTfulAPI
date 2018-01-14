@@ -20,9 +20,11 @@ public class Command extends DbModel implements Serializable {
 
     private String full_description;
 
+    private String learn;
+
     private String advice;
 
-    private CommandType type;
+    private Integer type;
 
     private String imageBase64;
 
@@ -44,11 +46,15 @@ public class Command extends DbModel implements Serializable {
         return full_description;
     }
 
+    public String getLearn() {
+        return learn;
+    }
+
     public String getAdvice() {
         return advice;
     }
 
-    public CommandType getType() {
+    public Integer getType() {
         return type;
     }
 

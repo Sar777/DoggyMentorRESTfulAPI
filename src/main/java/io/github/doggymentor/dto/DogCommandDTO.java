@@ -15,6 +15,8 @@ public class DogCommandDTO {
 
     private String full_description;
 
+    private String learn;
+
     private String advice;
 
     private CommandType type;
@@ -61,6 +63,14 @@ public class DogCommandDTO {
 
     public void setFullDescription(String description) {
         this.full_description = description;
+    }
+
+    public String getLearn() {
+        return learn;
+    }
+
+    public void setLearn(String learn) {
+        this.learn = learn;
     }
 
     public String getAdvice() {

@@ -2,6 +2,8 @@ package io.github.doggymentor.controller;
 
 import io.github.doggymentor.converter.ConverterFacade;
 import io.github.doggymentor.domain.command.Command;
+import io.github.doggymentor.domain.command.CommandType;
+import io.github.doggymentor.domain.dog.CommandStatus;
 import io.github.doggymentor.domain.dog.Dog;
 import io.github.doggymentor.domain.dog.DogCommand;
 import io.github.doggymentor.domain.user.User;
@@ -106,10 +108,12 @@ public class DogsController {
             dogCommandDTO.setName(command.getName());
             dogCommandDTO.setShortDescription(command.getShortDescription());
             dogCommandDTO.setFullDescription(command.getFullDescription());
+            dogCommandDTO.setLearn(command.getLearn());
             dogCommandDTO.setAdvice(command.getAdvice());
             dogCommandDTO.setImageBase64(command.getImageBase64());
             dogCommandDTO.setPremium(command.isPremium());
-            dogCommandDTO.setType(command.getType());
+            dogCommandDTO.setType(CommandType.valueOf(command.getType()));
+            dogCommandDTO.setStatus(CommandStatus.NONE);
 
             // Status
             dogCommand.ifPresent(dogCommandPresent -> dogCommandDTO.setStatus(dogCommandPresent.getStatus()));
