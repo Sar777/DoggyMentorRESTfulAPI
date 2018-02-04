@@ -1,7 +1,11 @@
 package io.github.doggymentor.controller;
 
 import io.github.doggymentor.converter.ConverterFacade;
+import io.github.doggymentor.domain.user.User;
 import io.github.doggymentor.dto.UserDTO;
+import io.github.doggymentor.dto.UserInfoDTO;
+import io.github.doggymentor.exception.Error;
+import io.github.doggymentor.exception.model.DogException;
 import io.github.doggymentor.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,6 +32,16 @@ public class SignUpController {
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> signUp(@RequestBody final UserDTO dto) {
-        return new ResponseEntity<>(service.create(converterFacade.convert(dto)), HttpStatus.OK);
+        if (service.findByEmail(dto.getEmail()) != null) {
+            throw new DogException(Error.USER_EXIST);
+        }
+
+        User user = service.create(converterFacade.convert(dto));
+        UserInfoDTO userInfoDTO = new UserInfoDTO();
+        userInfoDTO.setId(user.getId());
+        userInfoDTO.setEmail(user.getEmail());
+        userInfoDTO.setUsername(user.getUsername());
+        userInfoDTO.setGender(user.getGender());
+        return new ResponseEntity<>(userInfoDTO, HttpStatus.OK);
     }
 }

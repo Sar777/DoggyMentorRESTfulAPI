@@ -7,7 +7,8 @@ public enum Error {
     INVALID_IMAGE_FORMAT(4, "Invalid image format"),
     COMMAND_NOT_FOUND(5, "A command not found"),
     DOG_HAS_COMMAND(6, "Dog has the command"),
-    DOG_NOT_HAS_COMMAND(7, "Dog not has the command");
+    DOG_NOT_HAS_COMMAND(7, "Dog not has the command"),
+    USER_EXIST(8, "User with this email in database");
 
     private final int id;
     private final String message;
