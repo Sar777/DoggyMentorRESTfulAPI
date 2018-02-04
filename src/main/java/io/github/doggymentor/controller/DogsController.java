@@ -73,7 +73,7 @@ public class DogsController {
         return new ResponseEntity<>(dog, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.PUT)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     public ResponseEntity<?> addDog(@RequestBody DogDTO dogDTO) {
         User user = facade.getUser();
 
